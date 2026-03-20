@@ -1,15 +1,21 @@
+//arrays
+
 var favMovies = ["Mrs.Doubtfire", "Cars 2", "Overboard"];
 const hobbies = new Array("coloring", "crocheting", "cleaning");
 const luckyNumbers = new Array(2, 3, 7, 13);
 
+
+
 //literal
 
 const fortune = ["Yes", "NO", "maaaaaaaayybeeeee", "absolutely NOT", "suureee...", "Ask again"]
-console.log(fortune[2]);
-fortune[0] = "Absolutely";
+
+console.log("This is the third element : " + fortune[2]);
+
+fortune[0] = "Absolutely"; //replaces first element of array to "Absolutely"
 console.log(fortune);
 
-fortune[5] = "I don't know!!"
+fortune[5] = "I don't know!!" //replaces sixth element of array to "I don't know!!"
 console.log(fortune);
 
 
@@ -35,8 +41,14 @@ console.log(fortune);
 
 
 function pushArray(arr){
-    console.log(arr[0]);
-    console.log(arr[2]);
+    console.log("The first element is : " + arr[0]); 
+    console.log("The third element is : " + arr[2]);
 }
-pushArray();
+
+pushArray(fortune);
+pushArray(superLong);
+pushArray(luckyNumbers);
+pushArray(favMovies);
+
 console.log(pushArray());
+
